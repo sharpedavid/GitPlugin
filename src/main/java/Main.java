@@ -10,6 +10,6 @@ public class Main {
         InputStream input = new Main().getClass().getClassLoader().getResourceAsStream("git.properties");
         properties.load(input);
         String commitId = properties.getProperty("git.commit.id");
-
+        System.out.println("Commit ID: " + commitId);
     }
 }
